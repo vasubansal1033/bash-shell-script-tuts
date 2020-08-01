@@ -1,0 +1,52 @@
+What is shell?
+A unix shell program interprets user commands which are entered directly or read from a file called shell file or shell scripts. They are interpreted by the OS and they need not be compiled for execution.
+
+Different types of shells -> We are learning Bash shell scripting.
+
+Different types of shell support
+-> cat /etc/shells
+
+Bash stands for Born Again SHell. Its standard GNU shell. Intuitive, used in Linux/Unix OS.
+
+Where BASH is located?
+-> which bash
+
+Creating first shell script : Not necessary to add .sh extension. But if you are going to use an editor to open it, it's useful. It'll render it.
+Use touch to create the file.
+
+Use "ls -al" to display read-write permissions for You, for group and for user.
+
+#! /bin/bash -> Used to tell that it is a bash shell script
+
+We currently have only read-write permission, not execute permission. Use chmod +x hello.sh to make it executable
+
+Now ./hello.sh to run the script.
+
+In a UNIX shell, there are two types of variables: System variables(predefined, by OS. In capital cases) and User defined variables(generally in lower cases). 
+
+Use -p in read -p to read in the same line
+Whenever you write read without a variable following it, it gets stored in a built in variable REPLY. Use echo $REPLY.
+
+name=vasu
+echo $name -> outputs vasu
+echo "$name" -> same
+echo '$name' -> outputs $name
+
+If else condition->
+
+if [ condition ]
+then
+	statement
+fi
+
+If using [] for condition
+-eq for equality (-ne  )
+-gt for greater than (-lt)
+-ge for greater than equal to(-le)
+
+Otherwise use (( condition )) instead of square brackets for >, >=, ==, != etc with numbers or [[ condition ]] incase of strings.
+
+There are two types of files: One is block special file(video, music, image files) and other is character special file(contains normal text).
+
+Use ls -l to see information about files in pwd.
+-r, -w, -x flags for checking readable, writtable, executable flags respectively.
