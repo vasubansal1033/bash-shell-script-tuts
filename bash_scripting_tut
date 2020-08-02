@@ -50,3 +50,27 @@ There are two types of files: One is block special file(video, music, image file
 
 Use ls -l to see information about files in pwd.
 -r, -w, -x flags for checking readable, writtable, executable flags respectively.
+
+cat > overwrites the data in the file
+cat >> appends at the end. Does not overwrite
+
+chmod -w file_name -> Removes the write permission from the file
+
+Use -a flag as and for two conditions
+for eg. if [ $age -gt 18 -a $age -lt 30 ] -> If age is greater than 18 and less than 30.
+Use -o flag for or of two conditions.
+
+Use 'man bc' command to open a precision calculator language.
+
+Piping | -> Output of command A is treated as input for commandB
+commandA | commandB
+
+Case statements ->
+
+case expression in
+	pattern1 )
+		statements ;;
+	pattern2 )
+		statements ;;
+	...
+esac
